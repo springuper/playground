@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Page</title>
+  <script src="/rc-client.js"></script>
+</head>
+<body>
+  <h1 id="header">Hello Selenium RC Simulation</h1>
+  <input id="input" type="text" />
+  <button id="btn">Click me</button>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', () => {
+      const val = document.getElementById('input').value;
+      document.getElementById('header').innerText = `Input: ${val}`;
+    });
+  </script>
+</body>
+</html>

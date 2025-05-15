@@ -1,0 +1,15 @@
+{
+  "name": "selenium-rc-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node tests/example.test.js",
+    "start": "node server.js"
+  },
+  "author": "springuper@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jest": "^29.7.0"
+  }
+}

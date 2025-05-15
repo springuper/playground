@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebDriver Test Page</title>
+</head>
+<body>
+    <h1 id="header">Initial Text</h1>
+    <button id="changeText">Click Me!</button>
+
+    <script>
+        document.getElementById('changeText').addEventListener('click', () => {
+            document.getElementById('header').textContent = 'Text Changed!';
+        });
+    </script>
+</body>
+</html> 

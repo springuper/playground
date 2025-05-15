@@ -1,0 +1,17 @@
+{
+  "name": "appium-demo",
+  "version": "1.0.0",
+  "description": "Appium demo for hybrid iOS app testing",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "appium": "^2.5.1",
+    "webdriverio": "^8.32.3"
+  },
+  "devDependencies": {
+    "appium-xcuitest-driver": "^9.2.4"
+  }
+}

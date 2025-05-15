@@ -1,0 +1,19 @@
+{
+  "name": "webdriver-demo",
+  "version": "1.0.0",
+  "description": "Simple WebDriver protocol demo",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "check-chrome": "node -e \"const { execSync } = require('child_process'); const chromeVersion = execSync('/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --version').toString().match(/\\d+/)[0]; console.log('Chrome version:', chromeVersion);\"",
+    "start-server": "chromedriver --version && chromedriver --port=9515",
+    "test": "node test.js",
+    "test-with-server": "npm run start-server & sleep 1 && npm test"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "chromedriver": "^136.0.0"
+  }
+} 
