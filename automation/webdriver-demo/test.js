@@ -18,7 +18,7 @@ async function beforeAll() {
 }
 
 async function afterAll() {
-    await driver.endSession();
+    // await driver.endSession();
 }
 
 // Test case
